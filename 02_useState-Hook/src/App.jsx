@@ -9,8 +9,8 @@ const App = () => {
   const [num, setNum] = useState(0);   
 
   const changeMe = () => {
-    console.log("change ho gaya");  // output in console
-    // setNum('Happy New Year') // can assign string as well
+    console.log("change ho gaya"); 
+    // setNum('Happy New Year')    // can assign string as well
     setNum(20);
   };
 
