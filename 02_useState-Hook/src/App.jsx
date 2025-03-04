@@ -1,17 +1,12 @@
-/* Notes:-
-  hooks:- hooks are special type of function
-  useState hook :- state management
-*/
-
 import React, { useState } from "react";
 
 const App = () => {
-  const [num, setNum] = useState(0);   
+  const [num, setNum] = useState(0);
 
   const changeMe = () => {
-    console.log("change ho gaya"); 
-    // setNum('Happy New Year')    // can assign string as well
+    console.log("change ho gaya");
     setNum(20);
+    // setNum('Happy New Year')    // can assign string as well
   };
 
   return (
@@ -23,3 +18,8 @@ const App = () => {
 };
 
 export default App;
+
+/* Notes:-
+  hooks:- hooks are special type of function
+  useState hook :- state management
+*/
