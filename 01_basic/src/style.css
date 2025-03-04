@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 button {
@@ -20,4 +21,5 @@ button {
   border-radius: 5px;
   font-size: 18px;
   border: none;
+  margin: 10px;
 }
