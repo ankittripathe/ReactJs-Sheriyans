@@ -1,5 +1,3 @@
-// fragments:- Are the empty tags <> </>
-
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,3 +16,5 @@ const App = () => {
 };
 
 export default App;
+
+// fragments:- Are the empty tags <> </>
