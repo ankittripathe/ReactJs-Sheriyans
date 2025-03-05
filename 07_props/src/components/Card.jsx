@@ -5,19 +5,20 @@ import React from "react";
 const Card = (props) => {
   console.log(props);
   console.log(props.user); // output: console browser
-  
 
   return (
-    <div className="bg-white text-black text-center text-2xl rounded p-10">
-      <h1>
-        UserName:- {props.user} {props.surname}
+    <div className="bg-white text-black text-center rounded-xl p-10">
+      <h1 className="text-3xl">
+        Name:- {props.user} {props.surname}
       </h1>
 
-      <h2>
+      <h3 className="text-xl">
         City:- {props.address}, Age:- {props.age}
-      </h2>
+      </h3>
 
-      <button>Add Friend</button>
+      <button className="bg-orange-500 px-3 py-1 text-xl rounded mt-3">
+        Add Friend
+      </button>
     </div>
   );
 };
