@@ -5,9 +5,7 @@ const App = () => {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const response = await axios.get(
-      "https://picsum.photos/v2/list?page=2&limit=08"
-    );
+    const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=08");
     // const data = response.data
     // console.log(data);
     setData(response.data);
@@ -18,12 +16,13 @@ const App = () => {
     <div className="p-10">
       <button
         onClick={getData}
-        className="bg-blue-600 text-white font-semibold text-xl px-6 py-2 rounded active:scale-90 ml-96"
+        className="bg-blue-600 text-white font-semibold text-xl px-6 py-2 rounded active:scale-90 
+        ml-96"
       >
         Get Data
       </button>
 
-      <div className="p-10 mt-5 bg-red-600">
+      <div className="p-10 mt-5 bg-red-500 rounded-md">
         {data.map((elem, index) => {
           return (
             <div
