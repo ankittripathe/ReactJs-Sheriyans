@@ -33,7 +33,7 @@ const App = () => {
           return (
             <div
               key={index}
-              className="bg-gray-50 text-black flex items-center justify-between w-full p-4 mb-5 rounded"
+              className="bg-gray-50 text-black flex items-center justify-between w-full py-8 px-16 mb-5 rounded"
             >
               <img className="h-60 rounded" src={elem.download_url} alt="" />
 
