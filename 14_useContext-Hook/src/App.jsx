@@ -3,8 +3,8 @@ import React from "react";
 import Header from "./components/Header";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
-import UserContext, { DataContext } from "./context/UserContext";
 import { useContext } from "react";
+import { DataContext } from "./context/UserContext";
 
 const App = () => {
   const data = useContext(DataContext);
