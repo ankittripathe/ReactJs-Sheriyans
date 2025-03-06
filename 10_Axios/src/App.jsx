@@ -20,21 +20,20 @@ const App = () => {
   };
 
   return (
-    <div className="p-10">
+    <div className="flex flex-col p-10 justify-center items-center">
       <button
         onClick={getData}
-        className="bg-blue-600 text-white font-semibold text-xl px-6 py-2 rounded active:scale-90 
-        ml-96"
+        className="bg-blue-600 px-6 py-2 text-xl font-semibold rounded active:scale-90"
       >
         Get Data
       </button>
 
-      <div className="p-10 mt-5 bg-red-500 rounded-md">
+      <div className="p-8 mt-6 bg-orange-500 rounded-md w-full">
         {data.map((elem, index) => {
           return (
             <div
               key={index}
-              className="bg-gray-50 text-black flex items-center justify-between w-full p-6 mb-3 rounded"
+              className="bg-gray-50 text-black flex items-center justify-between w-full p-4 mb-5 rounded"
             >
               <img className="h-60 rounded" src={elem.download_url} alt="" />
 
