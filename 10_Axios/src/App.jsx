@@ -5,11 +5,18 @@ const App = () => {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=08");
-    // const data = response.data
+    const response = await axios.get(
+      "https://picsum.photos/v2/list?page=2&limit=08"
+    );
+    const data = response.data;
+    setData(data);
+    console.log(data);
+
+    // Same using fetch method
+    // const response = await fetch("https://picsum.photos/v2/list?page=2&limit=08")
+    // const data = await response.json()
     // console.log(data);
-    setData(response.data);
-    console.log(data); // upar wala data hai useState me likha hai
+    // setData(data)
   };
 
   return (
