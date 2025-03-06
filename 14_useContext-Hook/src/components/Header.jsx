@@ -1,6 +1,6 @@
 import React from "react";
-import UserContext, { DataContext } from "../context/UserContext";
 import { useContext } from "react";
+import { DataContext } from "../context/UserContext";
 
 const Header = () => {
   const user = useContext(DataContext);
