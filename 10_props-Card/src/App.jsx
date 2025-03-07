@@ -52,7 +52,7 @@ const App = () => {
   return (
     <div>
       <div className="p-10 ml-10">
-        {users.map((elem, index)=> {
+        {users.map((elem, index) => {
           return (
             <Card
               key={index}
