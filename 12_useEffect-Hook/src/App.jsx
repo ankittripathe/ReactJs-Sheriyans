@@ -10,7 +10,9 @@ const App = () => {
   // useEffect ka kaam hai kisi function ko baar-baar chalana
 
   const getData = async () => {
-    const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=10");
+    const response = await axios.get(
+      "https://picsum.photos/v2/list?page=2&limit=10"
+    );
     const data = response.data;
     setData(data);
     console.log(data);
