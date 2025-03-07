@@ -1,26 +1,23 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import SignIn from "./pages/SignIn";
-import NoPage from "./Pages/NoPage";
-import Layout from "./Pages/Layout";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Product from "./pages/Product";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <>
-      {/* <Layout/> */}
+    <div>
+      <Header />
+
       <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 };
 
