@@ -6,7 +6,7 @@ const App = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    alert("Submitted", username);
+    alert(`Submitted By :- ${username}`);
     console.log("Submitted by:-", username);
     setUsername("");
   };
