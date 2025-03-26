@@ -14,7 +14,6 @@ const App = () => {
         <input
           onChange={(e) => {
             setUsername(e.target.value);
-            // console.log(e.target.value);
           }}
           className="px-2 py-1 rounded text-xl m-5 text-black"
           type="text"
