@@ -14,7 +14,6 @@ const App = () => {
   return (
     <div>
       <h1>Value of Num: {num} </h1>
-
       <button onClick={handleIncrement}>Increment</button>
       <button onClick={handleDecrement}>Decrement</button>
       <br />
