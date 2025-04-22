@@ -6,7 +6,7 @@ const App = () => {
   const changeMe = () => {
     console.log("change ho gaya");
     setNum(20);
-    // setNum('Happy New Year')    // can assign string as well
+    // setNum('Happy New Year')    // Can assign string as well
   };
 
   return (
