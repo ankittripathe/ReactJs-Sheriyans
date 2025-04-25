@@ -10,9 +10,9 @@ const UserContext = createContext();
 
 const App = () => {
   const [userDetails, setUser] = useState({
-    username: "Maahi",
-    age: 44,
-    city: "Ranchi",
+    username: "Ankit",
+    age: 24,
+    city: "London",
   });
 
   return (
