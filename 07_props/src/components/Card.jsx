@@ -1,10 +1,9 @@
-// props:- props property ki tarah hai props ke jagah kuch vi likh skte hai, like property, abc etc
-
+// props:- props property ki tarah hai props ke jagah kuch vi likh skte hai, like property, abc etc.
 import React from "react";
 
 const Card = (props) => {
   console.log(props);
-  console.log(props.user); // output: console browser
+  console.log(props.user); // output: In console browser
 
   return (
     <div className="bg-white text-black text-center rounded-xl p-10">
