@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import Comp1 from "./components/Comp1";
 
 const App = () => {
