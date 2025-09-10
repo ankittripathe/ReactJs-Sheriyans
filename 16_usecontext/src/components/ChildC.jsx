@@ -1,9 +1,9 @@
-import React from "react";
 import { useContext } from "react";
 import { UserContext } from "../App";
 
 const ChildC = () => {
   const userData = useContext(UserContext);
+
   return (
     <div
       style={{
@@ -14,9 +14,9 @@ const ChildC = () => {
       }}
     >
       <h1>Child C</h1>
-      <h2>User:- {userData.username}</h2>
-      <h2>City:- {userData.city} </h2>
-      <h2>Age:- {userData.age}</h2>
+      <h2>User: {userData.username}</h2>
+      <h2>City: {userData.city} </h2>
+      <h2>Age: {userData.age}</h2>
     </div>
   );
 };

@@ -1,6 +1,6 @@
-import React from "react";
 import { createContext } from "react";
 
+// create userContext
 const DataContext = createContext();
 
 const UserContext = (props) => {
